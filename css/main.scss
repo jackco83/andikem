@@ -1,0 +1,414 @@
+@font-face {
+  font-family: 'Conv_ProximaNova-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('☺'), url('../fonts/ProximaNova-Regular.eot'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Conv_ProximaNova-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('☺'), url('../fonts/ProximaNova-Bold.eot'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Conv_ProximaNova-Extrabold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('☺'), url('../fonts/ProximaNova-Extrabold.eot'), url('../fonts/ProximaNova-Extrabold.woff') format('woff'), url('../fonts/ProximaNova-Extrabold.ttf') format('truetype'), url('../fonts/ProximaNova-Extrabold.svg') format('svg');
+}
+
+$clblack: #313131;
+$clblack1: #252525;
+$clblack2: #060614;
+$clblue: #0148b1;
+$clblue1: #0d0d27;
+$clgray: #ccc;
+$clgray1: #acacac;
+$clred: #f61716;
+$clwhite: #fff;
+
+body {
+  margin-top: 74px;
+}
+
+.mainnav {
+  background: $clwhite;
+  border: 0;
+  margin-bottom: 0;
+
+  .navbar-brand {
+    height: auto;
+    padding-bottom: 0;
+    padding-top: 8px;
+  }
+
+  .navbar-nav {
+    font-family: 'Conv_ProximaNova-Regular';
+    font-size: 18px;
+
+    >li {
+      >a {
+        color: $clblue;
+        padding-bottom: 0;
+        padding-top: 45px;
+      }
+    }
+
+    a {
+      &::after {
+        background: $clred;
+        content: '';
+        display: block;
+        height: 2px;
+        margin-left: 50%;
+        margin-top: 7px;
+        transition: width .3s ease-in-out .001s, margin .3s ease-in-out .001s;
+        width: 0;
+      }
+
+      &:hover,
+      &.active {
+        &::after {
+          margin-left: 35%;
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+.mainsl {
+  h1 {
+    color: $clwhite;
+    font-family: 'Conv_ProximaNova-Extrabold';
+    font-size: 52px;
+    left: 50%;
+    margin: 0 0 0 -30%;
+    position: absolute;
+    top: 20%;
+
+    span {
+      display: block;
+      font-family: 'Conv_ProximaNova-Regular';
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  a {
+    color: $clwhite;
+
+    &:hover {
+      color: $clwhite;
+      text-decoration: none;
+    }
+  }
+}
+
+.modserv {
+  display: table;
+  list-style: none;
+  margin: -140px auto 90px;
+  padding: 0;
+
+  li {
+    background: $clwhite;
+    box-shadow: 2px 10px 20px $clgray;
+    color: $clblack;
+    display: inline-block;
+    font-family: 'Conv_ProximaNova-Regular';
+    font-size: 16px;
+    height: 325px;
+    line-height: 26px;
+    margin-right: 50px;
+    padding: 30px 25px 0;
+    position: relative;
+    vertical-align: top;
+    width: 286px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    h2 {
+      color: $clred;
+      font-family: 'Conv_ProximaNova-Extrabold';
+      font-size: 30px;
+      margin: 0 0 20px;
+    }
+
+    a {
+      background: $clblue;
+      bottom: 40px;
+      color: $clwhite;
+      display: block;
+      font-size: 18px;
+      height: 30px;
+      left: 50%;
+      line-height: 30px;
+      margin-left: -95px;
+      padding: 0 10px 0 16px;
+      position: absolute;
+      transition: color .3s ease-in-out .001s, background .3s ease-in-out .001s;
+      width: 190px;
+
+      span {
+        display: block;
+        float: right;
+      }
+
+      &:hover {
+        background: $clgray1;
+        color: $clwhite;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.servicios {
+  background: url('../img/mapa.png') $clwhite 350px -512px no-repeat;
+  border-bottom: 1px solid $clgray1;
+  padding-bottom: 90px;
+  padding-top: 70px;
+
+  h2 {
+    color: $clblue;
+    font-family: 'Conv_ProximaNova-Extrabold';
+    font-size: 52px;
+    margin: 0 0 60px;
+  }
+}
+
+.mdrutas {
+  list-style: none;
+  margin-bottom: 50px;
+  margin-left: 90px;
+  padding-left: 0;
+
+  li {
+    background: url('../img/ico-circle.png') 0 12px no-repeat;
+    font-family: 'Conv_ProximaNova-Extrabold';
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  a {
+    color: $clblack1;
+    transition: color .3s ease-in-out .001s;
+
+    &:hover {
+      color: $clgray1;
+      text-decoration: none;
+    }
+  }
+}
+
+.vermas {
+  background: $clblue;
+  color: $clwhite;
+  display: block;
+  font-family: 'Conv_ProximaNova-Regular';
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 90px;
+  padding: 0 10px 0 16px;
+  transition: color .3s ease-in-out .001s, background .3s ease-in-out .001s;
+  width: 190px;
+
+  span {
+    display: block;
+    float: right;
+  }
+
+  &:hover {
+    background: $clgray1;
+    color: $clwhite;
+    text-decoration: none;
+  }
+}
+
+.noticias {
+  background: $clwhite;
+
+  h2 {
+    color: $clblue;
+    font-family: 'Conv_ProximaNova-Extrabold';
+    font-size: 52px;
+    margin: 40px 0;
+    text-align: center;
+  }
+}
+
+.mdnoti {
+  display: table;
+  list-style: none;
+  margin: 0 auto 90px;
+  padding: 0;
+
+  li {
+    background: $clwhite;
+    box-shadow: 2px 10px 20px $clgray;
+    color: $clblack1;
+    display: inline-block;
+    font-family: 'Conv_ProximaNova-Regular';
+    font-size: 16px;
+    height: 360px;
+    margin-right: 68px;
+    position: relative;
+    vertical-align: top;
+    width: 320px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .cdesc {
+      padding: 16px 20px 0;
+    }
+
+    h3 {
+      color: $clblue;
+      font-family: 'Conv_ProximaNova-Extrabold';
+      font-size: 23px;
+      margin: 0 0 20px;
+    }
+
+    a {
+      bottom: 20px;
+      color: $clred;
+      display: block;
+      left: 50%;
+      margin-left: -48px;
+      position: absolute;
+      transition: color .3s ease-in-out .001s;
+
+      span {
+        display: block;
+        float: right;
+        margin-left: 24px;
+      }
+
+      &:hover {
+        color: $clgray1;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.mainfoo {
+  background: $clblue1;
+  color: $clwhite;
+  font-family: 'Conv_ProximaNova-Regular';
+  font-size: 12px;
+  padding: 30px 0 20px;
+
+  .col-md-3 {
+    a {
+      display: block;
+    }
+
+    h3 {
+      display: table;
+      font-family: 'Conv_ProximaNova-Regular';
+      font-size: 12px;
+      margin-bottom: 30px;
+
+      >span {
+        background: $clwhite;
+        display: block;
+        height: 1px;
+        margin-top: 3px;
+        width: 100%;
+      }
+    }
+
+    &:first-child {
+      line-height: 20px;
+
+      a {
+        margin-bottom: 20px;
+      }
+    }
+
+    &:nth-child(2) {
+      h3 {
+        >span {
+          display: block;
+        }
+      }
+
+      img {
+        margin-right: 10px;
+      }
+
+      span {
+        line-height: 14px;
+      }
+
+      img,
+      span {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    &:nth-child(3) {
+      a {
+        color: $clwhite;
+      }
+    }
+
+    &:nth-child(4) {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.secfoo {
+  background: $clblack2;
+  color: $clwhite;
+  padding: 20px 0;
+
+  .col-md-6 {
+    a {
+      color: $clwhite;
+      float: right;
+    }
+
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

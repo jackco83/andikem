@@ -1,0 +1,544 @@
+$clblack: #313131;
+$clblack1: #252525;
+$clblack2: #060614;
+$clblue: #0148b1;
+$clblue1: #0d0d27;
+$clgray: #ccc;
+$clgray1: #acacac;
+$clred: #f61716;
+$clwhite: #fff;
+
+@media(max-width: 1366px) {
+  .mainsl,
+  .texban {
+    h1 {
+      font-size: 42px;
+    }
+  }
+
+  .texban {
+    line-height: 20px;
+
+    h1 {
+      margin-top: 25px;
+    }
+  }
+
+  .servicios,
+  .noticias,
+  .qsomos,
+  .pilares,
+  .contacto,
+  .mdwrap {
+    h2 {
+      font-size: 42px;
+    }
+  }
+
+  .qsomos {
+    .row {
+      &:last-child {
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  .pilares {
+    padding-top: 20px;
+
+    >h2 {
+      font-size: 42px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .negindent {
+    >h2 {
+      font-size: 42px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .mainnav {
+    .navbar-nav {
+      a {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .mainsl,
+  .texban {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  .qsomos,
+  .servicios,
+  .noticias,
+  .pilares,
+  .mdwrap,
+  .contacto {
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  .qsomos,
+  .pilares,
+  .maperu {
+    img {
+      width: 100%;
+    }
+  }
+
+  .servicios {
+    padding-bottom: 60px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .noticias {
+    h2 {
+      margin: 20px 0;
+    }
+  }
+
+  .modserv {
+    margin-bottom: 60px;
+  }
+
+  .pilares {
+    >h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .row {
+      &:last-child {
+        padding-bottom: 80px;
+      }
+    }
+  }
+
+  .texban {
+    line-height: 16px;
+
+    h1 {
+      span {
+        margin-bottom: 15px;
+        margin-top: 6px;
+      }
+    }
+  }
+
+  .negindent {
+    margin-top: 30px;
+
+    >h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .navpag {
+    padding: 60px 0 70px;
+
+    a {
+      height: 90px;
+      padding-top: 20px;
+    }
+  }
+
+  .v2 {
+    a {
+      height: 110px;
+    }
+  }
+
+  .ctnoti {
+    li {
+      &:last-child {
+        padding: 28px 36px 0 16px;
+      }
+    }
+  }
+
+  .mdredes {
+    padding: 40px 0 0;
+  }
+
+  .ctnpag {
+    width: 100%;
+
+    li {
+      margin-right: 2%;
+      width: 49%;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .mainnav {
+    .navbar-toggle {
+      border: 0;
+      margin-top: 12px;
+
+      .icon-bar {
+        background-color: $clblue;
+        width: 26px;
+      }
+    }
+  }
+
+  .modserv {
+    margin-top: -100px;
+
+    li {
+      display: block;
+      height: auto;
+      margin: 0 auto 40px;
+      padding-bottom: 30px;
+      width: 90%;
+
+      a {
+        margin: 20px auto 0;
+        position: initial;
+      }
+
+      h2 {
+        margin: 0;
+      }
+
+      &:last-child {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .servicios {
+    background-image: none;
+    border: 0;
+  }
+
+  .mainsl {
+    h1 {
+      left: 5%;
+      margin-left: 0;
+      top: 30%;
+    }
+
+    figure {
+      height: 534px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .bx-pager {
+      padding-left: 5%;
+      top: 25%;
+    }
+  }
+
+  .mdrutas,
+  .vermas {
+    margin-left: 7%;
+  }
+
+  .mdnoti {
+    li {
+      display: block;
+      height: auto;
+      margin: 0 auto 40px;
+      padding-bottom: 30px;
+      width: 90%;
+
+      img {
+        width: 100%;
+      }
+
+      a {
+        display: table;
+        margin: 20px auto 0;
+        position: initial;
+      }
+
+      &:last-child {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .mainfoo {
+    .col-md-3 {
+      h3 {
+        margin-top: 60px;
+      }
+    }
+  }
+
+  .secfoo {
+    text-align: center;
+
+    .col-md-6 {
+      a {
+        display: block;
+        float: initial;
+        margin: 20px 0 0;
+      }
+    }
+  }
+
+  .banner {
+    figure {
+      height: 495px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .texban {
+    line-height: 20px;
+    padding: 0 20px;
+
+    h1 {
+      font-size: 38px;
+    }
+  }
+
+  .qsomos,
+  .pilares {
+    h2 {
+      font-size: 24px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+    }
+
+    figure {
+      margin: 30px 0 40px;
+    }
+
+    .row {
+      padding-bottom: 20px;
+    }
+  }
+
+  .pilares {
+    >h2 {
+      font-size: 38px;
+    }
+  }
+
+  .contacto {
+    height: auto;
+    padding: 45px 0;
+
+    h2 {
+      text-align: left;
+    }
+
+    ul {
+      margin: 20px 0;
+    }
+  }
+
+  .mdwrap {
+    h2 {
+      margin-top: 60px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .maperu {
+    img {
+      display: block;
+      float: initial;
+      margin: 0 auto;
+      width: auto;
+    }
+  }
+
+  .navserv {
+    width: 100%;
+
+    li {
+      margin-right: 2%;
+      width: 49%;
+    }
+  }
+
+  .ctdes {
+    height: 170px;
+    padding: 20px;
+  }
+
+  .ctnoti {
+    margin-bottom: 30px;
+
+    a {
+      margin: 20px auto 0;
+      position: initial;
+    }
+
+    li {
+      &:last-child {
+        height: auto;
+        padding: 28px 20px;
+      }
+    }
+  }
+
+  .mdnoticias {
+    .row {
+      margin-bottom: 10px;
+    }
+  }
+
+  .mdint {
+    img,
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .v2 {
+    .pagprev {
+      padding-left: 40px;
+    }
+
+    .pagnext {
+      padding-right: 40px;
+    }
+  }
+
+}
+
+@media(width: 768px) {
+  body {
+    margin-top: 135px;
+  }
+
+  .mainnav {
+    .navbar-nav {
+      float: left !important;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .mainnav {
+    .navbar-collapse {
+      background: $clblue;
+      max-height: 100%;
+    }
+
+    .navbar-nav {
+      >li {
+        >a {
+          color: $clwhite;
+          font-family: 'Conv_ProximaNova-Bold';
+          font-size: 24px;
+          padding: 20px 0;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .navbar-brand {
+      padding-bottom: 13px;
+    }
+  }
+}
+
+@media(max-width: 425px) {
+  body {
+    margin-top: 50px;
+  }
+
+  .qsomos,
+  .pilares,
+  .maperu {
+    img {
+      width: 100%;
+    }
+  }
+
+  .ctdes {
+    height: 90px;
+    overflow: hidden;
+
+    h3 {
+      margin-bottom: 50px;
+    }
+  }
+
+  .navpag {
+    .pagprev {
+      padding-left: 10px;
+      text-align: left;
+    }
+
+    .pagnext {
+      padding-right: 10px;
+      text-align: right;
+    }
+
+    .numpag {
+      display: block;
+      margin: 0;
+    }
+
+    a {
+      font-size: 20px;
+      height: auto;
+      padding: 20px 0;
+
+      .glyphicon {
+        margin: 0;
+      }
+    }
+  }
+
+  .v2 {
+    .pagprev {
+      .numpag {
+        padding-left: 10px;
+      }
+    }
+
+    .pagnext {
+      .numpag {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .mainnav {
+    .navbar-brand {
+      img {
+        width: 140px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Conv_ProximaNova-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('☺'), url('../fonts/ProximaNova-Regular.eot'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Conv_ProximaNova-Extrabold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('☺'), url('../fonts/ProximaNova-Extrabold.eot'), url('../fonts/ProximaNova-Extrabold.woff') format('woff'), url('../fonts/ProximaNova-Extrabold.ttf') format('truetype'), url('../fonts/ProximaNova-Extrabold.svg') format('svg');
+}
+
+$clblack: #313131;
+$clblue: #0148b1;
+$clblue1: #0148b1;
+$clgray: #ccc;
+$clred: #f61716;
+$clwhite: #fff;
+
+.mainnav {
+  background: $clwhite;
+  margin-bottom: 0;
+
+  .navbar-brand {
+    height: auto;
+  }
+
+  .navbar-nav {
+    font-family: 'Conv_ProximaNova-Regular';
+    font-size: 18px;
+
+    >li {
+      >a {
+        color: $clblue;
+        padding-top: 48px;
+      }
+    }
+  }
+}
+
+.modserv {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    box-shadow: 2px 10px 20px $clgray;
+    color: $clblack;
+    font-family: 'Conv_ProximaNova-Regular';
+    font-size: 16px;
+    padding: 50px 25px;
+    width: 286px;
+
+    h2 {
+      color: $clred;
+      font-family: 'Conv_ProximaNova-Extrabold';
+      font-size: 30px;
+    }
+
+    a {
+      background: $clblue1;
+      color: $clwhite;
+      display: block;
+      font-size: 18px;
+    }
+  }
+}
+
+.servicios {
+
+}
